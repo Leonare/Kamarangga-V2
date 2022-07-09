@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" >
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <title>Dipaaroom</title>
+</head>
+<body>
+  
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">KAMARANGGA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#intro" >Introduction</a>
+          <a class="nav-link" href="#menu" >Menu</a>
+          <a class="nav-link" href="#pbar" >Time Management</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Akhir Navbar-->
+
+
+
+    <!--Intro-->
+  <section class="intro">
+    <div class="container">
+    <div class="col col-intro">
+      
+    </div>
+  </div>
+  </section>
+    
+    <div class="ucpn d-grid gap-8">
+      <p class="on text-end " > Selamat Datang di </p>
+      <p class="tu text-end"> <strong class="name">KAMARANGGA</strong> </p>
+      <p class="tri text-end"> Web yang membantu kalian untuk belajar dengan lebih teratur, fokus, semangat</p>
+    </div>
+    <!--Akhir Intro-->
+
+    <!--bitton-->
+    <div class="container-fluid mt-lg-5 mt-sm-1">
+      <div class="row justify-content-center">
+        <div class="col-1">
+          <p class="Fmenu mt-5">FEATURES MENU</p>
+            <div class="vl mt-4"></div>
+        </div>
+        <div class="col-3 m-md-3 col-sm-3 m-sm-1">
+          <div class="row">
+            <button type="button" class="btn fbutton btn-17 material-icons mb-lg-5 mb-sm-2" onclick="window.location.href='kalkulator.html'">calculate</button>
+          </div>
+          <div class="row"> 
+            <button type="button" class="btn fbutton q btn-17 material-icons mb-lg-5 mb-sm-2 " onclick="window.location.href='jadwal.html'">event_note</button>
+          </div>
+        </div>
+        <div class="col-3 m-md-3 col-sm-3 m-sm-1">
+          <div class="row">
+            <button type="button" class="btn fbutton btn-17 material-icons mb-lg-5 mb-sm-2" onclick="window.location.href='todo.html'">format_list_bulleted</button>
+          </div>
+          <div class="row"> 
+            <button type="button" class="btn fbutton q btn-17 material-icons mb-lg-5 mb-sm-2">timer</button>
+          </div>
+        </div>
+        <div class="col-3 m-md-3 col-sm-3 m-sm-1">
+          <div class="row">
+            <button type="button" class="btn fbutton btn-17 material-icons mb-lg-5 mb-sm-2" onclick="window.location.href='https://meet.google.com/'">videocam</button>
+          </div>
+          <div class="row"> 
+            <button type="button" class="btn fbutton q btn-17 material-icons mb-lg-5 mb-sm-2">school</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--akhir button-->
+
+    <!--jam belajar-->
+    <section class="tmanage">
+      <div class="container-fluid timemanage">
+        <div class="row ">
+          <div class="col-12">
+            <p class="text-end jdl-bag3 ">TIME MANAGEMENT</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-1 kosong"></div>
+          <div class="col-10 wdhbar">
+            <div class="row ">
+              <div class="col-1">
+                <button type="submit" onClick="refreshPage()" class="m-2 btn btn-outline-primary refresh mt-3 material-icons">refresh</button>
+              </div>
+              <div class="col-11">
+                <div class="alert myAlert alert-success alert-dismissible fade show mt-3  d-none" role="alert">
+                  <strong>Selamat!</strong> anda sudah menyelesaikan waktu belajar, silahkan istirahat
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+            <div class="row btnlvl ">
+              <div class="col-md-6 col-sm-3 m-lg-3 m-sm-1 justify-content-center text-center p-5">
+                <div class="  btnEasy mb-3 btn-group">
+                  <button type="button" class="btn btn-success border-end border-2 "  onclick="document.getElementById('btnEasy').style.display= 'block'"> Easy</button>
+                  <button class="btn btn-success" onclick="document.getElementById('btnEasy').style.display= 'none'" >X</button>
+                </div>
+                <div class=" btnMed mb-3 btn-group">
+                  <button type="button" class="btn btn-warning border-end border-2 "  onclick="document.getElementById('btnMed').style.display= 'block'"> Normal</button>
+                  <button class="btn btn-warning"  onclick="document.getElementById('btnMed').style.display= 'none'" >X</button>
+                </div>
+                <div class=" btnHard mb-3 btn-group">
+                  <button type="button" class="btn btn-danger border-end border-2 "  onclick="document.getElementById('btnHard').style.display= 'block'"> Hard</button>
+                  <button class="btn btn-danger"  onclick="document.getElementById('btnHard').style.display= 'none'" >X</button>
+                </div>
+                <br>
+                <div id="myProgress row" class="border border-1 rounded-2 border-info myprogress">
+                  <div id="myBar" class="progress-bar progress-bar-striped bg-info progress-bar-animated rounded-2 "  role="progressbar" title="progressbar">
+                    <div id="label"></div>
+                  </div>
+                </div>
+                  <button class="btn btn-success btnmasalah" id="btnEasy" onclick="moveEasy()">Mulai Belajar</button> 
+                  <button class="btn btn-warning btnmasalah" id="btnMed" onclick="moveMed()">Mulai Belajar</button> 
+                  <button class="btn btn-danger btnmasalah" id="btnHard" onclick="moveHard()">Mulai Belajar</button> 
+              </div>
+              
+              <div class="col-4 border m-auto mt-4 wdhttl">
+                <div class="row text-center mt-3"><h4>YOUR SCORE</h4></div>
+                <div class="row justify-content-center p-2 score">20</div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-1 ">
+            <div class="va "></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col info">
+            <p>*Wait until 1-2 minutes</p>
+          </div>
+        </div>  
+      </div>
+  </section>
+
+  <script>
+    const alert = document.querySelector(".myAlert");
+const myBar = document.querySelector(".myBar");
+
+function moveEasy() {
+var elem = document.getElementById("myBar");
+var width = 1;
+var id = setInterval(frame, 100);
+function frame() {
+  if (width >= 100) {
+    clearInterval(id);
+    alert.classList.toggle("d-none");
+  } else {
+    width++;
+    elem.style.width = width + "%";
+    document.getElementById("label").innerHTML = width * 1 + "%";
+  }
+}
+}
+function moveMed() {
+var elem = document.getElementById("myBar");
+var width = 1;
+var id = setInterval(frame, 30000);
+function frame() {
+  if (width >= 100) {
+    clearInterval(id);
+    alert.classList.toggle("d-none");
+  } else {
+    width++;
+    elem.style.width = width + "%";
+    document.getElementById("label").innerHTML = width * 1 + "%";
+  }
+}
+}
+function moveHard() {
+var elem = document.getElementById("myBar");
+var width = 1;
+var id = setInterval(frame, 60000);
+function frame() {
+  if (width >= 100) {
+    clearInterval(id);
+    alert.classList.toggle("d-none");
+  } else {
+    width++;
+    elem.style.width = width + "%";
+    document.getElementById("label").innerHTML = width * 1 + "%";
+  }
+}
+}
+
+function refreshPage(){
+    window.location.reload();
+} 
+</script>
+
+
+
+</body>
+</html>
